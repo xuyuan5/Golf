@@ -1,0 +1,88 @@
+Golf Score
+
+Mission: 
+This website will contain functionality to allow multiple users to be able to log on and update their golf scores and get a sense of their handicap.
+It will provide the ability for admin level users to add courses and update course statistics.
+
+Project Milestones:
+[DONE] 1.  Provide interface for adding course information
+[DONE] 2.  Provide interface for user
+[DONE] 3.  Provide ability to add user score information
+[DONE] 4.  Provide various user statistics
+[DONE] 5.  Provide login functionalities
+5.5 Improve UI
+6.  Input Error Checking
+7.  Provide buddy system, allow users to add other users
+8.  Provide ability to search users
+99. Enhancements and error handling
+
+
+backlog 1 - Provide an error reporting box
+[DONE] backlog 2 - consolidate constant usage. current version number, 0.2 appears in the following pages:
+                install/upgrade.php, install/content.php, databse/actions.php
+
+Milestone 1
+1. Landing page should provide a means of accessing the courses.
+2. Provide ability to add/delete/edit any course information.
+    Database - two tables
+        Course (Index, Name, 9-hole)
+        Tee (Course_ID, Name, Slope, Rating, Is_ladies, Par, Handicap)
+        
+    Sample Course JSON data:
+    {
+        "name": "Bushwood",
+        "9-holes": false,
+        "tees": {
+            "Red": {
+                "name": "Red",
+                "slope": 123,
+                "rating": 70,
+                "is-ladies": false,
+                "par": [4, 5, 4, 4, 4, 4, 3, 4, ...],
+                "handicap": [1, 2, 3, 4, 5, 6, ...]
+            },
+            "Blue": {
+                "name": "Blue",
+                "slope": 123,
+                "rating": 70,
+                "is-ladies": false,
+                "par": [4, 5, 4, 4, 4, 4, 3, 4, ...],
+                "handicap": [1, 2, 3, 4, 5, 6, ...]
+            },
+            "Blue": {
+                "name": "Blue",
+                "slope": 123,
+                "rating": 70,
+                "is-ladies": false,
+                "par": [4, 5, 4, 4, 4, 4, 3, 4, ...],
+                "handicap": [1, 2, 3, 4, 5, 6, ...]
+            }
+        }
+    }
+
+Milestone 2
+1. When user first signs on, there should be a log in page, if user is already logged in, the landing page should display
+2. top right corner should display user information, and log out action. provide user ability to modify user profile
+3. top right corner should also have function to do user maintenance, if currently logged in user is admin.
+3. database design:
+    Users (Index, Email)
+
+Milestone 3
+1. If user is signed on, display all user scores
+2. Provide an ability to add new score, also allow user to modify uploaded scores
+3. database design:
+    Scores (UserID, CourseID, TeeID, Date, Score)
+
+Milestone 4
+1. User profile flyout should display one of the following:
+    "not enough rounds are played to display handicap information" or
+    "handicap: 25.12"
+2. There should be no database activities.
+
+Milestone 5
+1. Add real user account management.
+
+Milestone 6
+1. error handling, input verification
+2. consolidate headers of all .php files. ensure that die messages are all properly redirected.
+3. ensure the use of mysql_real_escape_string for all strings.

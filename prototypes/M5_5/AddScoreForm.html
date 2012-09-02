@@ -1,0 +1,52 @@
+<html>
+<head>
+</head>
+<body>
+<script src='jquery-1.6.2.min.js'></script>
+<script src='jquery-ui-1.8.16.custom.min.js'></script>
+<script src='add-score.js'></script>
+<form id='add-score-form' class='nice custom'>
+    <div id='add-score-meta'>
+    <input type='date' placeholder='Date' class='small text-input date'/>
+    <div class="custom dropdown course-dropdown">
+        <a href="#" class="current">Select A Course</a>
+        <a href="#" class="selector"></a>
+        <ul id='add-score-courses-list'></ul>
+    </div>
+    <div class="custom dropdown tee-dropdown">
+        <a href="#" class="current">Select A Tee</a>
+        <a href="#" class="selector"></a>
+        <ul id='add-score-tees-list'></ul>
+    </div>
+    <a id='add-score-next-button' class="nice radius small white button">Next</a>
+    </div>
+    <div id='add-score-next'>
+    <table class='score'>
+        <tr class='front-9'>
+            <td>#1 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#2 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#3 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#4 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#5 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#6 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#7 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#8 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#9 <input type='number' min='1' max='10' class='small input-text'/></td>
+        </tr>
+        <tr class='back-9'>
+            <td>#10 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#11 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#12 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#13 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#14 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#15 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#16 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#17 <input type='number' min='1' max='10' class='small input-text'/></td>
+            <td>#18 <input type='number' min='1' max='10' class='small input-text'/></td>
+        </tr>
+    </table>
+    <a id='submit-score-button' class="nice radius small white button">OK</a>
+    </div>
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+div .score {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+.delete-game {
+	background: transparent;
+	background-image: url('images/Close Square.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	opacity: .4;
+	-moz-opacity: .4;
+	filter: alpha(opacity=40);
+}
+
+.delete-game:hover{
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.score input {
+    width: 40px;
+}
+
+#submit-score-button {
+    float: right;
+}

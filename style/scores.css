@@ -1,0 +1,43 @@
+div .score {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 0px solid;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+.delete-game {
+	background: transparent;
+	background-image: url('images/Close Square.png');
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	width: 16px;
+	height: 16px;
+	opacity: .4;
+	-moz-opacity: .4;
+	filter: alpha(opacity=40);
+}
+
+.delete-game:hover{
+	opacity: 1;
+	-moz-opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+.score input {
+    width: 150px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
+
+#submit-score-button, #add-score-next-button {
+    float: right;
+}

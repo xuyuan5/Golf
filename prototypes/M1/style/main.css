@@ -1,0 +1,30 @@
+div .course {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border: 1px solid;
+    -moz-border-radius:10px;
+    -webkit-border-radius:10px;
+    border-radius: 10px;
+    border-color: gray;
+}
+
+.button {
+    margin-top: 3px;
+}
+
+.h-buttons {
+    margin-top: 10px;
+}
+
+.button.tee {
+    width: 90%;
+}
+
+.button.add-tee {
+    margin-top: 10px;
+}
+
+input.small.number {
+    width: 20px;
+}

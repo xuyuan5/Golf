@@ -1,0 +1,10 @@
+#user-details {
+	width: 150px;
+	background: rgb(233,233,233);
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+	z-index: 99;
+	padding: 5px;
+	padding-right: 20px;
+	text-align: right;
+}

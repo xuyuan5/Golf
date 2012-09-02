@@ -1,0 +1,17 @@
+#form-login, #form-register, #form-user {
+    position: absolute;
+    right: 5px;
+}
+
+input[type=email] {
+    width: 100%;
+}
+
+header {
+    margin-bottom:20px;
+    background: gray;
+}
+
+.bar-item {
+    margin-top:5px;
+}
